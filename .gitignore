@@ -1,0 +1,35 @@
+# Root .gitignore for project
+
+# PHP / Composer
+/vendor/
+
+# App-level ignores (also present in app/.gitignore)
+/app/vendor/
+/app/var/
+/app/public/bundles/
+/app/.env.local
+
+# Environment files
+/.env
+/.env.*
+/app/.env
+/app/.env.*
+/.env.local
+/.env.*.local
+
+# IDEs and OS
+/.idea/
+/.vscode/
+.DS_Store
+
+# Logs and temporary
+*.log
+*.cache
+/tmp/
+
+# Node
+/node_modules/
+
+# Build artifacts
+/dist/
+/.cache/
