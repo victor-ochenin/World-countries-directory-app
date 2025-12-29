@@ -21,7 +21,7 @@ final class CountryController extends AbstractController
         private readonly CountryScenarios $countries,
     ) {}
 
-    #[Route('/', name: 'app_api_country_get_all', methods: ['GET'])]
+    #[Route('', name: 'app_api_country_get_all', methods: ['GET'])]
     public function getAll(): JsonResponse
     {
         $countries = $this->countries->getAll();
@@ -67,7 +67,7 @@ final class CountryController extends AbstractController
         }
     }
 
-    #[Route('/test', name: 'app_api_country_store', methods: ['POST'])]
+    #[Route('', name: 'app_api_country_store', methods: ['POST'])]
     public function store(Request $request): JsonResponse
     {
         try {
